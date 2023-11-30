@@ -1,0 +1,54 @@
+:root {
+  --header-height: 90px;
+  --footer-height: 90px;
+  --padding: 2rem;
+}
+
+/** Reset **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+
+/** Utils **/
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/** Debug **/
+.debug-header {
+  min-height: var(--header-height);
+  background-color: rgb(251, 133, 91);
+}
+.debug-footer {
+  min-height: var(--footer-height);
+  background-color: goldenrod;
+}
+.debug-main {
+  min-height: calc(100vh - var(--header-height) - var(--header-height));
+  background-color: #888;
+}
+
+/** Header **/
+/** Main **/
+/** Footer **/
