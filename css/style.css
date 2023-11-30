@@ -1,6 +1,6 @@
 :root {
   --header-height: 90px;
-  --footer-height: 600px;
+  --footer-height: 650px;
   --base-space: 20px;
   --padding-nav: 10px;
 }
@@ -67,7 +67,7 @@ li {
   background-color: goldenrod;
 }
 .debug-main {
-  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height) - 650px);
   background-color: #888;
 }
 
@@ -122,3 +122,39 @@ color: #6C6C6C;
 
 /** Main **/
 /** Footer **/
+.footer{
+  min-height: var(--footer-height);
+  padding: 80px;
+  background-color: #111111;
+  color: white;
+}
+.footer-container{
+  height: 550px;
+  width: 80%;
+  margin: 0 auto;
+  
+
+  border: 1px solid rgb(217, 72, 72); 
+
+}
+.footer-info{
+  display: flex;
+  height:calc(0.7 * 550px);
+  margin: var(--base-space);
+
+
+  border: 1px dashed red;
+}
+
+.footer-social{
+  height:calc(0.2 * 550px);
+  margin: var(--base-space);
+
+
+  border: 1px dashed red;
+}
+.section-info{
+  width: calc(100% / 5);
+
+  border: 1px dashed green;
+}
