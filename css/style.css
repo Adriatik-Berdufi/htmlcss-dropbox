@@ -1,7 +1,8 @@
 :root {
   --header-height: 90px;
-  --footer-height: 90px;
-  --padding: 2rem;
+  --footer-height: 600px;
+  --base-space: 20px;
+  --padding-nav: 10px;
 }
 
 /** Reset **/
@@ -10,10 +11,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 img {
   width: 100%;
 }
@@ -22,33 +22,103 @@ a {
   color: inherit;
 }
 ul {
-  list-style: none;
+    list-style: none;
+    margin: 0 var(--base-space);
+    text-align: center;
+    vertical-align: top;
+    line-height: 1;
+    /** degug
+    border: 1px dashed red; **/
 }
 li {
-  display: inline-block;
+    display: inline-block;
+    padding: var(--padding-nav);
+
+    
+
+    /** debug
+    background: #ccc;
+    border: 1px solid yellow; 
+    **/
+    
 }
 
 /** Utils **/
-.container {
-  max-width: 1080px;
+.wrapper{
+  max-width: 100%;
+}
+.container{
+  min-width: 1080px;
+  height: var(--header-height);
   margin: 0 auto;
-  padding: 0 15px;
+  
+}
+.button{
+  padding: 10px 20px;
+  background-color: #3061FF;
+  border: none;
 }
 
+
 /** Debug **/
-.debug-header {
-  min-height: var(--header-height);
-  background-color: rgb(251, 133, 91);
-}
+
 .debug-footer {
   min-height: var(--footer-height);
   background-color: goldenrod;
 }
 .debug-main {
-  min-height: calc(100vh - var(--header-height) - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   background-color: #888;
 }
 
+
+
+
+
+
 /** Header **/
+.header{
+  position: sticky;
+  top: 0;
+height: var(--header-height);
+font-size: 14px;
+background-color: white;
+color: #6C6C6C;
+ 
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.logo-small{
+  width: 120px;
+}
+
+.nav-bar-left ul li{ 
+  margin-right: calc(3 * var(--base-space));
+}
+.nav-bar-right ul li{
+  margin-right: 0;
+  margin-left: calc(3 * var(--base-space));
+}
+.nav-bar-left ul li div{
+  position: relative;
+  
+}
+.logo-small{ 
+  position: absolute;
+  top: var(--padding-nav); 
+}
+
+
+
+
+
+
+
+
+
+
 /** Main **/
 /** Footer **/
