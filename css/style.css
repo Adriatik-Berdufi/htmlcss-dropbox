@@ -17,8 +17,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+img{
+  display: block;
   width: 100%;
+  
 }
 a {
   text-decoration: none;
@@ -53,14 +55,27 @@ li {
 .container{
   min-width: 1080px;
   height: var(--header-height);
-  margin: 0 auto;
-  
+  margin-right: auto;
+  margin-left: auto;
 }
 .button{
   padding: 10px 20px;
   background-color: #3061FF;
   border: none;
   color: white;
+  cursor: pointer;
+}
+.col-30{
+  width: 30%;
+}
+.col-40{
+  width: 40%;
+}
+.col-60{
+  width: 60%;
+}
+.col-70{
+  width: 70%;
 }
 
 
@@ -80,15 +95,20 @@ li {
 
 
 
-/** Header **/
+/**      Header       **/
 .header{
+  height: var(--header-height); 
   position: sticky;
   top: 0;
-height: var(--header-height);
-font-size: 14px;
-background-color: white;
-color: #6C6C6C;
- 
+  z-index: 1;
+  display: flex;
+
+  font-size: 14px;
+  background-color: white;
+  color: #6C6C6C;
+}
+.header .nav-bar{
+  flex-grow: 1;
 }
 .nav-bar{
   display: flex;
@@ -117,74 +137,59 @@ color: #6C6C6C;
 
 
 
-/** Main **/
+/**         Main         **/
 .main-container{
   min-height: calc(100vh - var(--header-height));
 }
 
 
-/*****JUMBO*******/
+/*****      JUMBO      *******/
 
 .jumbo{
-  
-  min-height: 615px;
-
+  display: flex;
+  min-height: 620px;
   background-color:#B4D0E7 ;
   /**degug**/
   border: 1px solid black;
 }
 .jumbo-container{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1080px;
+  flex-grow:0;
+  width: 1080px;
   margin: 0 auto;
   padding: var(--base-space);
 
-  /*debug*/
-  border: 1px dashed black;
-  min-height: 100%;
+  
 }
 .tittle{
   min-height: 250px;
-  font-size: 2.48rem ;
+  font-size: 2.2rem ;
   text-align: center;
   line-height: 80px;
   padding: calc(2 * var(--base-space)) 0;
  
-  /**debug*/
-  border: 2px dashed red;
 }
 .jumbo-description{
   display: flex;
-  flex-wrap: wrap;
   min-height: calc(615px - 250px - (2 * var(--base-space)));
-  
-  /**debug*/
-  border: 2px dashed red;
+  position: relative;
+  top: 70px;
+
 }
-.jumbo-description__description{
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 100%;
+.jumbo-description .col-40{
+  padding-top: var(--base-space);
   /*font-style*/
   font-size: var(--font-paragraph-size);
   color: var(--font-paragraph-color);
   line-height: var(--font-line-height);
 
-  /**debug*/
-  border: 2px dashed rgb(64, 0, 255);
+  
 }
-.jumbo-description__img{
+.jumbo-description .col-60{
   padding: var(--base-space);
-  width: 632px;
-  height: 130%;
-  /**debug*/
-  border: 2px dashed rgb(64, 0, 255);
+  
 }
-.jumbo-description__img img{
-  height: 100%;  
-}
+
+ 
 .jumbo-description__description  p {
   height: 180px;
   padding: var(--base-space);
@@ -198,6 +203,72 @@ color: #6C6C6C;
   line-height: 120px;
   font-size: 40px;
   
+}
+
+/*****      PAGE     *******/
+.page{
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  min-height: calc(100vh - var(--header-height));
+  margin: 0 auto;
+  padding: 100px;
+  
+  background-color: aqua;
+}
+.page > section{
+  flex-wrap: wrap;
+  flex-grow: 0;
+}
+
+.h2-tittle{
+  font-size: 22px;
+  border: 1px solid black;
+}
+.tipo-fatturazione{
+  line-height: 100px;
+}
+.tipo-fatturazione > span{
+  margin-left: var(--base-space);
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 800px;
+  width: inherit;
+  margin-bottom: 50px;
+  /**debug**/
+  border: 2px dashed black;
+}
+.cards-container .col-30{
+  min-height: 100%;
+  /**debug***/
+  border: 1px dashed red;
+}
+
+.card-large{
+  height: 300px;
+   /**debug***/
+   border: 1px dashed red; 
+}
+.card-large-team{
+  text-align: center;
+  padding: var(--base-space);
+  border: 1px dashed red; 
+}
+.card-large-description{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--base-space);
+}
+.card-large-description-tittle{
+  
+  /**debug***/
+  border: 3px dashed yellow; 
+}
+.col-40 > span.button{
+margin-left: 75px;
 }
 
 
