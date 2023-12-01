@@ -2,6 +2,8 @@
   --header-height: 70px;
   --footer-height: 650px;
   --base-space: 20px;
+  --space-large: 50px;
+  --space-section: 150px;
   --padding-nav: 10px;
   --font-paragraph-size: 14px;
   --font-paragraph-color: #343434;
@@ -54,10 +56,11 @@ li {
   max-width: 100%;
 }
 .container{
-  min-width: 1080px;
-  height: var(--header-height);
+  width: 100%;
+  min-height: 100px;
   margin-right: auto;
   margin-left: auto;
+  border: 3px dashed black;
 }
 .button{
   padding: 10px 20px;
@@ -71,9 +74,13 @@ li {
 }
 .col-40{
   width: 40%;
+  min-height: 100px;
+
 }
 .col-60{
   width: 60%;
+  min-height: 100px;
+
 }
 .col-70{
   width: 70%;
@@ -86,10 +93,7 @@ li {
   min-height: var(--footer-height);
   background-color: goldenrod;
 }
-.debug-main {
-  
-  background-color: #888;
-}
+
 
 
 
@@ -278,8 +282,8 @@ li {
 /*** Large card****/
 .card-large{
   height: 300px;
-   /**debug***/
    border: var(--border-table);
+   margin-bottom: var(--space-section);
 }
 .card-large-team{
   text-align: center;
@@ -313,6 +317,39 @@ li {
 margin-top: var(--base-space);
 margin-left: 75px;
 }
+
+
+
+/**** Section Partner*****/
+.partner{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--space-section); 
+}
+.partner .col-40{
+  padding-top: var(--space-large);
+  padding-left: var(--space-large);
+  padding-right: var(--base-space);
+}
+.partner h3{
+  font-size: 24px;
+  margin-bottom: var(--base-space);
+}
+.partner p{
+  font-size: 16px;
+  line-height: var(--font-line-height);
+  color: var(--font-paragraph-color);
+  margin-bottom: var(--space-large);
+}
+
+/**  Section operazioni *****/
+.operazioni{
+  margin-bottom: var(--base-space);
+}
+
+
+
+
 
 
 
