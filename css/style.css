@@ -364,10 +364,41 @@ margin-left: 75px;
   color: var(--font-paragraph-color);
   margin-bottom: var(--space-large);
 }
-
-
-
-
+/*** logo partner ****/
+.logo-partner{
+  display: flex;
+  min-height: 620px;
+  background-color:#B4D0E7 ;
+  /**degug**/
+  border: 1px solid black;
+}
+.logo-partner-container{
+  display: flex;
+  flex-direction: row;
+  flex-grow:1;
+  width: 1080px;
+  margin: 0 ;
+}
+.big-box{
+  
+  flex-wrap: wrap;
+  
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+  border: 2px dashed green;
+}
+.box-column{
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vw / 6);
+  flex-wrap: wrap;
+}
+.small-box{
+  width: 50%;
+  height: calc(100vw / 6);
+ 
+  border: 3px solid red;
+}
 
 
 
