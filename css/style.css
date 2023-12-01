@@ -53,14 +53,14 @@ li {
 
 /** Utils **/
 .wrapper{
-  max-width: 100%;
+  width: 100%;
 }
 .container{
   width: 100%;
   min-height: 100px;
   margin-right: auto;
   margin-left: auto;
-  border: 3px dashed black;
+ 
 }
 .button{
   padding: 10px 20px;
@@ -218,8 +218,7 @@ li {
   min-height: calc(100vh - var(--header-height));
   margin: 0 auto;
   padding: 100px;
-  
-  background-color: aqua;
+
 }
 .page > section{
   flex-wrap: wrap;
@@ -320,7 +319,7 @@ margin-left: 75px;
 
 
 
-/**** Section Partner*****/
+/**** Section Partner *****/
 .partner{
   display: flex;
   flex-direction: row;
@@ -364,13 +363,18 @@ margin-left: 75px;
   color: var(--font-paragraph-color);
   margin-bottom: var(--space-large);
 }
-/*** logo partner ****/
+
+
+
+
+
+
+/***   logo partner  ****/
+
+
 .logo-partner{
-  display: flex;
-  min-height: 620px;
-  
-  /**degug**/
-  border: 1px solid black;
+  margin-top: 100px;
+  display: flex; 
 }
 .logo-partner-container{
   display: flex;
@@ -382,7 +386,6 @@ margin-left: 75px;
 .big-box{
   width: calc(100% / 3);
   height: calc(100vw / 3);
-  border: 2px dashed green;
 }
 .box-column{
   display: flex;
@@ -425,8 +428,52 @@ margin-left: 75px;
 .botton .small-box:nth-child(2){
   background-color:#FAD831;
 }
+.big-box.big-box.centrale{
+  padding: var(--space-large);
+}
+.big-box.centrale img{
+  width: 260px;
+}
+.big-box.centrale p{
+    font-size: 16px;
+    line-height: var(--font-line-height);
+    color: var(--font-paragraph-color);
+    margin-top: var(--space-large);
+}
 
-
+/**** section porta-dropbox****/
+.porta-dropbox{
+ background-color: #B4D0E7;
+ width: 100%;
+ 
+}
+.porta-dropbox-container{
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+.porta-dropbox-container .col-60,
+.porta-dropbox-container .col-40{
+  padding: 150px 90px;
+  text-align: start;
+}
+.porta-dropbox .button{
+  background-color: whitesmoke;
+  color: #747272;
+}
+.domande{
+  min-height: 500px;
+  width: 1080px;
+  padding: 150px 90px;
+  
+}
+.domande > div{
+  line-height: 100px;
+  border: 3 px solid black;
+}
+.border-bottom{
+  border-bottom: 2px solid #9a9898;
+}
 
 
 
