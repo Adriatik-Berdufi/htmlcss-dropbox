@@ -368,7 +368,7 @@ margin-left: 75px;
 .logo-partner{
   display: flex;
   min-height: 620px;
-  background-color:#B4D0E7 ;
+  
   /**degug**/
   border: 1px solid black;
 }
@@ -380,9 +380,6 @@ margin-left: 75px;
   margin: 0 ;
 }
 .big-box{
-  
-  flex-wrap: wrap;
-  
   width: calc(100% / 3);
   height: calc(100vw / 3);
   border: 2px dashed green;
@@ -396,17 +393,38 @@ margin-left: 75px;
 .small-box{
   width: 50%;
   height: calc(100vw / 6);
- 
-  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
-
-
-
-
+.small-box > img{
+  filter: invert(100%);
+  max-width: 150px;
+}
+.left .small-box:nth-child(1){
+  background-color:#A2D39B ;
+}
+.left .small-box:nth-child(2){
+  background-color:#61082B;
+}
+.right .small-box:nth-child(1){
+  background-color:#3193CE ;
+}
+.right .small-box:nth-child(2){
+  background-color:#F6201E;
+}
+.top .small-box:nth-child(1){
+  background-color:#D51A1E;
+}
+.top .small-box:nth-child(2){
+  background-color:#B4D0E7;
+}
+.botton .small-box:nth-child(1){
+  background-color:#122481;
+}
+.botton .small-box:nth-child(2){
+  background-color:#FAD831;
+}
 
 
 
