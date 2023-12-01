@@ -486,7 +486,7 @@ margin-left: 75px;
 }
 .footer-container{
   height: 550px;
-  width: 80%;
+  width: 1080px;
   margin: 0 auto;
   
 
@@ -511,6 +511,19 @@ margin-left: 75px;
 }
 .section-info{
   width: calc(100% / 5);
+  padding: var(--base-space);
+  
 
   border: 1px dashed green;
+}
+.section-info .h3-tittle{
+  font-size: 18px;
+  padding-left: 10px;
+  margin-bottom: var(--base-space);
+}
+.section-info ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
 }
