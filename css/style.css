@@ -6,6 +6,7 @@
   --font-paragraph-size: 14px;
   --font-paragraph-color: #343434;
   --font-line-height: 20px;
+  --border-table:1px solid rgb(50, 50, 50, 0.5);
 }
 
 /** Reset **/
@@ -223,7 +224,7 @@ li {
 
 .h2-tittle{
   font-size: 22px;
-  border: 1px solid black;
+
 }
 .tipo-fatturazione{
   line-height: 100px;
@@ -231,43 +232,85 @@ li {
 .tipo-fatturazione > span{
   margin-left: var(--base-space);
 }
+
+
+/** Card***/
 .cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 800px;
+  
   width: inherit;
   margin-bottom: 50px;
-  /**debug**/
-  border: 2px dashed black;
+  
 }
 .cards-container .col-30{
-  min-height: 100%;
-  /**debug***/
-  border: 1px dashed red;
+  border:var(--border-table)
+}
+.cards-container  ul{
+  list-style: circle;
+  text-align: left; 
+}
+.cards-container li {
+  display: list-item;
 }
 
+.head-card{
+  text-align: center;
+  padding: var(--padding-nav);
+  color: var(--font-paragraph-color);
+  border-bottom: var(--border-table);
+}
+.cards-container .button{
+  margin:33px;
+  
+}
+.top-card,
+.bottom-card{
+  padding: var(--base-space);
+}
+
+
+
+
+
+
+/*** Large card****/
 .card-large{
   height: 300px;
    /**debug***/
-   border: 1px dashed red; 
+   border: var(--border-table);
 }
 .card-large-team{
   text-align: center;
   padding: var(--base-space);
-  border: 1px dashed red; 
+  border-bottom: var(--border-table);
+  
 }
 .card-large-description{
   display: flex;
   justify-content: space-between;
   padding: var(--base-space);
 }
-.card-large-description-tittle{
-  
-  /**debug***/
-  border: 3px dashed yellow; 
+
+.card-large-description-tittle > h3{
+  font-size: 24px;
+  margin-bottom: var(--base-space);
+}
+.card-large-description-tittle > h4{
+  font-size: 18px;
+  margin-bottom: calc(2 * var(--base-space));
+}
+.card-large-description-tittle > p{
+  font-size: var(--font-paragraph-size);
+  line-height: var(--font-line-height);
+  color: var(--font-paragraph-color);
+}
+.card-large-description .col-40{
+  padding: var(--base-space);
 }
 .col-40 > span.button{
+margin-top: var(--base-space);
 margin-left: 75px;
 }
 
