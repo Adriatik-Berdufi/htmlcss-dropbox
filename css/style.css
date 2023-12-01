@@ -344,11 +344,26 @@ margin-left: 75px;
 
 /**  Section operazioni *****/
 .operazioni{
+ 
   margin-bottom: var(--base-space);
 }
-
-
-
+.presentazione{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: inherit;
+  margin-top: var(--space-large);
+}
+.presentazione h3{
+  font-size: 24px;
+  margin-bottom: var(--base-space);
+}
+.presentazione p{
+  font-size: 16px;
+  line-height: var(--font-line-height);
+  color: var(--font-paragraph-color);
+  margin-bottom: var(--space-large);
+}
 
 
 
