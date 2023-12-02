@@ -339,6 +339,9 @@ margin-left: 75px;
 }
 
 /**  Section operazioni *****/
+
+
+
 .operazioni{
  
   margin-bottom: var(--base-space);
@@ -438,7 +441,7 @@ margin-left: 75px;
     margin-top: var(--space-large);
 }
 
-/**** section porta-dropbox****/
+/**** section porta-dropbox ****/
 .porta-dropbox{
  background-color: #B4D0E7;
  width: 100%;
@@ -458,6 +461,12 @@ margin-left: 75px;
   background-color: whitesmoke;
   color: #747272;
 }
+
+
+
+/**** Domande section ****/
+
+
 .domande{
   min-height: 500px;
   width: 1080px;
@@ -469,8 +478,36 @@ margin-left: 75px;
   border: 3 px solid black;
 }
 .border-bottom{
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #9a9898;
+  
 }
+.border-bottom span{
+  position: relative;
+  padding:0 var(--base-space);
+}
+.border-bottom span:hover p{
+  display: initial;
+}
+.border-bottom p{
+  padding: var(--base-space);
+  background-color: rgba(248, 248, 248, 0.90);
+  z-index: 1;
+  width: 400px;
+  position: absolute;
+  bottom: 65px;
+  left: -200px;
+  line-height: var(--base-space);
+  display: none;
+  
+}
+
+
+
+
+
+
 
 
 
@@ -565,6 +602,9 @@ margin-left: 75px;
 .section-info  h3:hover span,
 .section-info  li:hover span
 {
-  box-shadow:rgba(255, 255, 255, 0.56) 0px 3px 48px 0px, rgba(255, 255, 255, 0.56) -1px 10px 17px -6px, rgba(255, 255, 255, 0.56) 0px -22px 32px -18px inset;
+  box-shadow:
+  rgba(255, 255, 255, 0.56) 0px 3px 48px 0px,
+  rgba(255, 255, 255, 0.56) -1px 10px 17px -6px,
+  rgba(255, 255, 255, 0.56) 0px -22px 32px -18px inset;
 
 }
