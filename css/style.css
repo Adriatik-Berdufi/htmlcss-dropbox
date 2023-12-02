@@ -429,10 +429,16 @@ margin-left: 75px;
   background-color:#FAD831;
 }
 .big-box.big-box.centrale{
+  background-color: rgb(96%, 96%, 96%);
   padding: var(--space-large);
 }
 .big-box.centrale img{
   width: 260px;
+  margin-bottom: var(--space-large);
+}
+#spazio{
+  width: 100px;
+  border: 1px solid rgb(3, 3, 3, 0.3);
 }
 .big-box.centrale p{
     font-size: 16px;
