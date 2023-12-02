@@ -517,9 +517,11 @@ margin-left: 75px;
   text-align: left; 
 }
 .section-info li{
-  padding-top: 20px;
-
+  margin-top: 20px;
 }
+
+
+
 .footer-social > :first-child{
   min-height:calc(0.2 * 550px);
   width: calc(100% / 6);
@@ -560,13 +562,9 @@ margin-left: 75px;
   display: none;
 }
 
-.section-info  li:hover{
-  background-color: rgba(20, 20, 20, 1);
-  box-shadow: rgba(255, 255, 255, 0.56) -8px 10px 10px -11px;
-  
-}
-.section-info  h3:hover{
-  background-color: rgba(20, 20, 20, 1);
-  box-shadow:rgba(255, 255, 255, 0.56) -2px 12px 13px -9px, rgba(255, 255, 255, 0.56) 0px -5px 3px -2px inset
-  
+.section-info  h3:hover span,
+.section-info  li:hover span
+{
+  box-shadow:rgba(255, 255, 255, 0.56) 0px 3px 48px 0px, rgba(255, 255, 255, 0.56) -1px 10px 17px -6px, rgba(255, 255, 255, 0.56) 0px -22px 32px -18px inset;
+
 }
