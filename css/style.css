@@ -641,3 +641,11 @@ margin-left: 75px;
   rgba(255, 255, 255, 0.56) 0px -22px 32px -18px inset;
 
 }
+
+#special-foto{
+  box-shadow: rgba(196, 255, 188, 1) 15px -15px 0px -5px inset,
+  rgba(196, 255, 188, 1) -15px 15px 0px -5px inset;
+  
+}
+
+
