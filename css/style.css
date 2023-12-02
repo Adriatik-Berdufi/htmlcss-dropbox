@@ -1,6 +1,6 @@
 :root {
   --header-height: 70px;
-  --footer-height: 650px;
+  --footer-height: 550px;
   --base-space: 20px;
   --space-large: 50px;
   --space-section: 150px;
@@ -39,7 +39,9 @@ li {
     /*border: 1px dashed red; */
 
 }
-
+i{
+  color: currentColor;
+}
 /** Utils **/
 .wrapper{
   width: 100%;
@@ -101,6 +103,7 @@ li {
   font-size: 14px;
   background-color: white;
   color: #6C6C6C;
+  box-shadow: rgba(0, 0, 0, 0.35) 19px -27px 7px -26px inset;
 }
 
 .nav-bar{
@@ -474,50 +477,96 @@ margin-left: 75px;
 /** Footer **/
 .footer{
   min-height: var(--footer-height);
-  padding: 80px;
   background-color: #111111;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -3px 25px 1px;
+  
 }
 .footer-container{
-  height: 550px;
-  width: 1080px;
+  min-height: 550px;
+  width: 80%;
   margin: 0 auto;
+  padding: var(--space-large);
   
-
-  border: 1px solid rgb(217, 72, 72); 
-
 }
 .footer-info{
   display: flex;
-  height:calc(0.7 * 550px);
+  min-height:calc(0.5 * var(--footer-height));
   margin: var(--base-space);
 
-
-  border: 1px dashed red;
 }
 
 .footer-social{
-  height:calc(0.2 * 550px);
+  min-height:calc(0.2 * 550px);
   margin: var(--base-space);
 
-
-  border: 1px dashed red;
 }
 .section-info{
   width: calc(100% / 5);
   padding: var(--base-space);
-  
 
-  border: 1px dashed green;
 }
 .section-info .h3-tittle{
   font-size: 18px;
-  padding-left: 10px;
-  margin-bottom: var(--base-space);
+  margin-bottom: calc(2 * var(--base-space));
 }
 .section-info ul {
   margin: 0;
   display: flex;
   flex-direction: column;
   text-align: left; 
+}
+.section-info li{
+  padding-top: 20px;
+
+}
+.footer-social > :first-child{
+  min-height:calc(0.2 * 550px);
+  width: calc(100% / 6);
+
+}
+.footer-social > :first-child div{
+  display: flex;
+  justify-content: space-between;
+  min-height:calc(0.1 * 550px);
+  line-height: calc(0.1 * 550px);
+  padding: 0 var(--base-space);
+  
+}
+.footer-social > :first-child > :last-child {
+  border-top: 3px solid rgba(256, 256, 256, 0.35);
+
+}
+.footer-social > :first-child > :last-child > :last-child:hover ul{
+  display: initial;
+}
+.footer-social > :first-child > :last-child > :last-child ul li{
+  padding:0 10px;
+  width: 100%;
+}
+.footer-social > :first-child > :last-child > :last-child ul li:hover{
+  background-color: rgba(107, 103, 103, 0.3);
+}
+.language{
+  position: relative;
+}
+.select-language{
+  width: 100px;
+  position: absolute;
+  top: -145px;
+  left: -44px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.section-info  li:hover{
+  background-color: rgba(20, 20, 20, 1);
+  box-shadow: rgba(255, 255, 255, 0.56) -8px 10px 10px -11px;
+  
+}
+.section-info  h3:hover{
+  background-color: rgba(20, 20, 20, 1);
+  box-shadow:rgba(255, 255, 255, 0.56) -2px 12px 13px -9px, rgba(255, 255, 255, 0.56) 0px -5px 3px -2px inset
+  
 }
