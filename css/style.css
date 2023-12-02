@@ -97,7 +97,7 @@ i{
   height: var(--header-height); 
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   display: flex;
 
   font-size: 14px;
@@ -208,6 +208,7 @@ i{
 }
 
 /*****      PAGE     *******/
+
 .page{
   display: flex;
   flex-direction: column;
@@ -234,7 +235,8 @@ i{
 }
 
 
-/** Card***/
+/** Card ***/
+
 .cards-container{
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +256,9 @@ i{
 .cards-container li {
   display: list-item;
 }
-
+.cards-container a{
+  color: #3061FF;
+}
 .head-card{
   text-align: center;
   padding: var(--padding-nav);
@@ -269,13 +273,36 @@ i{
 .bottom-card{
   padding: var(--base-space);
 }
-
+.cards-container .col-30 h4{
+  margin-bottom: var(--base-space);
+}
+.cards-container .col-30 h6{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.cards-container .col-30 span{
+  font-size: 12px;
+  opacity: 0.5;
+}
+.cards-container .col-30 ul{
+  margin-top: var(--space-large);
+  line-height: var(--base-space);
+  opacity: 0.5;
+}
+.top-card h4{
+  font-size: 24px;
+}
+.bottom-card h4{
+  margin-top: 50px;
+}
 
 
 
 
 
 /*** Large card****/
+
+
 .card-large{
   height: 300px;
    border: var(--border-table);
@@ -317,6 +344,8 @@ margin-left: 75px;
 
 
 /**** Section Partner *****/
+
+
 .partner{
   display: flex;
   flex-direction: row;
@@ -448,6 +477,7 @@ margin-left: 75px;
 }
 
 /**** section porta-dropbox ****/
+
 .porta-dropbox{
  background-color: #B4D0E7;
  width: 100%;
@@ -498,7 +528,7 @@ margin-left: 75px;
 }
 .border-bottom p{
   padding: var(--base-space);
-  background-color: rgba(248, 248, 248, 0.90);
+  background-color: rgba(71%, 82%, 91%,0.55);
   z-index: 1;
   width: 400px;
   position: absolute;
@@ -508,9 +538,6 @@ margin-left: 75px;
   display: none;
   
 }
-
-
-
 
 
 
