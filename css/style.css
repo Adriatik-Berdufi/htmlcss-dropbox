@@ -407,20 +407,21 @@ margin-left: 75px;
 /***   logo partner  ****/
 
 
-.logo-partner{
-  margin-top: 100px;
-  display: flex; 
-}
 .logo-partner-container{
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-grow:1;
-  width: 1080px;
+  width: 100%;
   margin: 0 ;
 }
 .big-box{
   width: calc(100% / 3);
   height: calc(100vw / 3);
+}
+.big-box.centrale{
+  overflow: scroll;
+
 }
 .box-column{
   display: flex;
@@ -525,11 +526,11 @@ margin-left: 75px;
   border-bottom: 2px solid #9a9898;
   
 }
-.border-bottom span{
+.border-bottom div{
   position: relative;
   padding:0 var(--base-space);
 }
-.border-bottom span:hover p{
+.border-bottom div:hover p{
   display: initial;
 }
 .border-bottom p{
